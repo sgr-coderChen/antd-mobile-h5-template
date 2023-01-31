@@ -1,6 +1,12 @@
-# 这是一个基于 Umi 3.x使用antd-mobile v5的H5模板项目
+# 这是一个基于 Umi 3.x 使用 antd-mobile v5 的 H5 模板项目
 
 ### 使用的技术
-- react + react hook
-- [umi文档](https://v3.umijs.org/zh-CN/docs/getting-started)
-- [antd-mobile](https://mobile.ant.design/zh/components/icon)
+
+- ts + react + react hook
+- [umi 文档](https://v3.umijs.org/zh-CN/docs/getting-started)
+- [antd-mobile-v5](https://mobile.ant.design/zh/components/icon)
+
+### 运行步骤
+
+1. yarn
+2. yarn start
