@@ -9,3 +9,4 @@ declare module '*.svg' {
 
 declare const BASE_URL: string;
 declare const __PRO__: boolean;
+declare module 'postcss-px-to-viewport';
