@@ -4,7 +4,7 @@ export default defineConfig({
   // base: '/template/',
   // publicPath: '/template/',
   define: {
-    BASE_URL: 'https://1234aa.com',
+    BASE_URL: 'http://jsonplaceholder.typicode.com',
     __PRO__: false,
   },
 });
