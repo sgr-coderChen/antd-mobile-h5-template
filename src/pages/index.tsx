@@ -7,7 +7,7 @@ import { useAppInfo } from '@/hooks';
 import { useDispatch } from 'react-redux';
 import { login } from '@/store/modules/user';
 
-export default function IndexPage() {
+const IndexPage = () => {
   const now = new Date();
   const [visible, setVisible] = useState(false);
   const dispatch = useDispatch();
@@ -65,4 +65,8 @@ export default function IndexPage() {
       />
     </div>
   );
-}
+};
+
+IndexPage.title = '首页';
+
+export default IndexPage;

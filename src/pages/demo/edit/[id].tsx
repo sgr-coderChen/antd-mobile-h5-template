@@ -7,4 +7,6 @@ const Edit = () => {
   return <Index />;
 };
 
+Edit.title = '编辑测试页面详情';
+
 export default Edit;
