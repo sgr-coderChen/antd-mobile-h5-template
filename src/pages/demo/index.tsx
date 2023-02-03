@@ -25,7 +25,8 @@ const DemoPage = () => {
 
   return (
     <>
-      <div onClick={() => history.push(`/demo/edit/${123}`)}>DemoPage</div>
+      <div onClick={() => history.push(`/demo/edit`)}>新增</div>
+      <div onClick={() => history.push(`/demo/edit/${123}`)}>编辑</div>
       <Button color="primary" onClick={() => fetchList()}>
         获取文章列表
       </Button>

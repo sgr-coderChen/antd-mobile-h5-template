@@ -9,7 +9,7 @@ import { Toast } from 'antd-mobile';
  * @param onError 错误回调 默认会用Toast提示
  * @param loadingState 启用loading状态
  */
-export function useRequest<
+export default function useRequest<
   T extends (...args: any[]) => PromiseLike<any>,
   K = T extends (...args: any) => PromiseLike<infer U> | infer U ? U : never,
 >(

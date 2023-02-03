@@ -6,6 +6,9 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  dynamicImport: {
+    loading: '@/components/Loading',
+  },
   cssLoader: {
     localsConvention: 'camelCase',
   },
