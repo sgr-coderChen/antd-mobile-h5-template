@@ -1,3 +1,3 @@
-export { default as useAppInfo } from './useAppInfo';
-export { default as useRequest } from './useRequest';
-export { default as usePreload } from './usePreload';
+export { default as useAppInfo } from './use-app-info';
+export { default as useRequest } from './use-request';
+export { default as usePreload } from './use-preload';

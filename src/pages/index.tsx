@@ -1,17 +1,17 @@
 import styles from './index.less';
 import { Calendar, DatePicker, Button, Toast } from 'antd-mobile';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { history } from 'umi';
 import dayjs from 'dayjs';
 import { useAppInfo } from '@/hooks';
 import { useDispatch } from 'react-redux';
-import { login } from '@/store/modules/user';
+import { login } from '@/store/slices/user';
 
 const IndexPage = () => {
   const now = new Date();
   const [visible, setVisible] = useState(false);
   const dispatch = useDispatch();
-  const userInfo = useAppInfo((state) => state.user);
+  const [user] = useAppInfo((state) => [state.user]);
 
   const handleJump = () => {
     console.log(dayjs);
@@ -28,8 +28,11 @@ const IndexPage = () => {
         phone: '23234234234',
       }),
     );
-    console.log('userInfo', userInfo);
   };
+
+  useEffect(() => {
+    console.log('user', user);
+  }, [user]);
 
   return (
     <div>

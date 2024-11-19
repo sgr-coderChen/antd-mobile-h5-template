@@ -1,4 +1,4 @@
-import Index from './components/Detail';
+import Index from './components/detail';
 import { useParams } from 'umi';
 
 const Edit = () => {

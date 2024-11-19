@@ -7,7 +7,7 @@ export default defineConfig({
     type: 'none',
   },
   dynamicImport: {
-    loading: '@/components/Loading',
+    loading: '@/components/loading',
   },
   cssLoader: {
     localsConvention: 'camelCase',
@@ -18,7 +18,10 @@ export default defineConfig({
       viewportWidth: 375,
       viewportUnit: 'vw',
       fontViewportUnit: 'vw',
-      // exclude: [/node_modules/], 	// 设置忽略文件 这里默认把antd的组件单位也全部转换掉
+      include: [/src/, /node_modules\/antd-mobile/], // 转换 src 和 antd-mobile 的样式
+      propList: ['*', '!border*'], // 排除 border 属性的转换
+      minPixelValue: 1, // 小于或等于 1px 不进行转换，避免 1px 问题
+      selectorBlackList: ['ignore-'], // 排除带有 ignore- 的样式类
     }),
   ],
 });

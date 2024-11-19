@@ -1,5 +1,5 @@
 import { usePreload } from '@/hooks';
-import Index from './components/Detail';
+import Index from './components/detail';
 
 const fakeApi = () => {
   return new Promise((resolve, reject) => {
@@ -17,13 +17,14 @@ const Create = () => {
       value: res,
     };
   });
+
   console.log(data);
+
   if (data === null) {
     return mask;
   }
-  return <Index />;
 
-  // return <Index />;
+  return <Index />;
 };
 
 Create.title = '新增测试页面详情';
